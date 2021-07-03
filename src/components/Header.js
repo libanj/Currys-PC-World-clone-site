@@ -60,6 +60,15 @@ const InputItem = styled.input`
   margin: 0px;
   font-size: 13px;
   border: 1px solid rgb(204, 204, 204);
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 5px rgba(22, 27, 122, 0.5);
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
 `;
 
 const SearchButton = styled.button`
