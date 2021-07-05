@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/Navigation/Navigation";
 import styled from "styled-components";
 function App() {
   return (
