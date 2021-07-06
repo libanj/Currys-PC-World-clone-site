@@ -20,10 +20,7 @@ function Header() {
         alt="currys"
       />
       <SearchBar>
-        <InputItem
-          type="text"
-          placeholder="Product name or item no."
-        ></InputItem>
+        <InputItem type="text" placeholder="Product name or item no." />
         <SearchButton>Search</SearchButton>
       </SearchBar>
       <LinkSection>
