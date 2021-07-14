@@ -2,13 +2,17 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
 import styled from "styled-components";
+import Home from "./components/Home/Home";
+
 function App() {
   return (
     <div className="App">
       <Header />
       <Navigation />
       <Wrapper>
-        <Content role="main"></Content>
+        <Content role="main">
+          <Home />
+        </Content>
       </Wrapper>
     </div>
   );
