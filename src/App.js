@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
 import styled from "styled-components";
 import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Content role="main">
           <Home />
         </Content>
+        <Footer />
       </Wrapper>
     </div>
   );
