@@ -44,6 +44,10 @@ import {
   CompanyLogoList,
   CompanyLogoListItem,
   CompanyLogoImage,
+  ConsoleBannerSection,
+  ConsoleBannerImage,
+  CreditMessageSection,
+  CreditMessage,
 } from "./HomeComponents";
 import {
   topServices,
@@ -105,6 +109,25 @@ function Home() {
           <CompanyLogoList>{renderCompanyLogoListItems}</CompanyLogoList>
         </CompanyLogoWrap>
       </CompanyLogoSection>
+      <ConsoleBannerSection>
+        <ConsoleBannerImage
+          src="https://currys-ssl.cdn.dixons.com/css/themes/Homepage/wk32/img/gaming-stock-full.png"
+          alt="PS5 and Xbox Series X currently out of stock online. "
+        />
+      </ConsoleBannerSection>
+      <CreditMessageSection>
+        <CreditMessage>
+          <strong>1. Buy now pay later: </strong>
+          To avoid paying interest, pay full balance before your Buy Now Pay
+          Later period ends. 24.9% APR representative (variable).
+        </CreditMessage>
+        <CreditMessage>
+          <strong>2. Interest free credit: </strong>
+          Requires a YourPlan flexible credit account where you get a credit
+          limit that you can use for future purchases at 24.9% APR
+          representative (variable).
+        </CreditMessage>
+      </CreditMessageSection>
     </div>
   );
 }
@@ -157,7 +180,12 @@ const renderTechDeliveredTags = techDeliveredRow.map((techDelivered) => (
 
 const renderCompanyLogoListItems = companyLogoData.map((companyLogo) => (
   <CompanyLogoListItem>
-    <a target="_blank" title={companyLogo.alt} href={companyLogo.href}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      title={companyLogo.alt}
+      href={companyLogo.href}
+    >
       <figure>
         <CompanyLogoImage alt={companyLogo.alt} src={companyLogo.src} />
       </figure>

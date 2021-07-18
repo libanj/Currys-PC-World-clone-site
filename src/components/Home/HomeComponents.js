@@ -392,3 +392,26 @@ export const CompanyLogoImage = styled.img`
   max-width: 100%;
   box-sizing: border-box;
 `;
+
+export const ConsoleBannerSection = styled(CompanyLogoSection)`
+  margin-top: unset;
+  overflow: unset;
+`;
+
+export const ConsoleBannerImage = styled.img`
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 8px;
+`;
+
+export const CreditMessageSection = styled(ConsoleBannerSection)`
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+  font-size: 13px;
+  color: #474747;
+`;
+
+export const CreditMessage = styled.p`
+  margin-bottom: 1em;
+`;
